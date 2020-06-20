@@ -1,0 +1,4 @@
+#!/bin/bash
+result=$(echo "$1" | sed "s/svg/eps/g")
+inkscape $1 -E $((test -n "$2" && echo "$2") || echo $result) --export-ignore-filters --export-ps-level=3
+echo $result

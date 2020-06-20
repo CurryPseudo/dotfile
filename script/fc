@@ -1,0 +1,3 @@
+#!/bin/bash
+file=$(find ~/.config/* ~/.script/* ~/Documents/neovim-config/* | fzf)
+test -n "$file" && nvim $file

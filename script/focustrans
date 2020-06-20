@@ -1,0 +1,2 @@
+#! /bin/bash
+compton-trans -w $(xdotool getactivewindow) -c $1

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/usr/include/uv'
+let g:netrw_dirhist_5='/usr/include'
+let g:netrw_dirhist_4='/usr/include/uv'
+let g:netrw_dirhist_3='/home/currypseudo/.config/fish'
+let g:netrw_dirhist_2='/home/currypseudo/Programming/rust/singleton/src'
+let g:netrw_dirhist_1='/home/currypseudo/Documents/latex/pbrt/sphere-pdf'
+let g:netrw_dirhist_0='/home/currypseudo/Music'
+let g:netrw_dirhist_9='/home/currypseudo/.config/alacritty'
+let g:netrw_dirhist_8='/home/currypseudo/.config/fish/conf.d'
+let g:netrw_dirhist_7='/home/currypseudo/.config/polybar'

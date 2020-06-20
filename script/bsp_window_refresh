@@ -1,0 +1,2 @@
+#!/bin/bash
+bspc node -t floating && sleep 0.05 && bspc node -t tiled

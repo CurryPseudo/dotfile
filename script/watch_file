@@ -1,0 +1,5 @@
+#!/bin/bash
+while true; do
+	$2
+	inotifywait -qe close_write $1
+done

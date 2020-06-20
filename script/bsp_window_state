@@ -1,0 +1,12 @@
+#!/bin/bash
+
+MENU="$(rofi -no-lazy-grab -sep "|" -dmenu -i -p 'Window state :' \
+-matching fuzzy \
+<<< "Tiled|PseudoTiled|Floating|FullScreen|Refresh")"
+case "$MENU" in
+  *Tiled) bspc node -t tiled ;;
+  *PseudoTiled) bspc node -t pseudo_tiled ;;
+  *Floating) bspc node -t floating ;;
+  *FullScreen) bspc node -t fullscreen ;;
+  *Refresh) bsp_window_refresh;;
+esac

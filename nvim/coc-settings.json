@@ -1,0 +1,68 @@
+{
+	"languageserver": {
+		"clangd": {
+			"command": "clangd",
+			"args": [
+				"--background-index"
+			],
+			"rootPatterns": [
+				"compile_flags.txt",
+				"compile_commands.json",
+				".vim/",
+				".git/",
+				".hg/"
+			],
+			"filetypes": [
+				"c",
+				"cpp",
+				"objc",
+				"objcpp"
+			]
+		},
+		"lua": {
+			"command": "lua-lsp",
+			"filetypes": [
+				"lua"
+			]
+		}
+	},
+	"diagnostic.refreshOnInsertMode": true,
+	"latex": {
+		"build": {
+			"onSave": false,
+			"args": [
+				"-xelatex"
+			]
+		},
+		"forwardSearch": {
+			"executable": "zathura",
+			"args": [
+				"--synctex-forward",
+				"%l:1:%f",
+				"%p"
+			]
+		}
+	},
+	"rust.unstable_features": true,
+	"rust.build_on_save": true,
+	"rust.wait_to_build": 0,
+	"rust.jobs": 16,
+	"rust.crate_blacklist": [
+		"cocoa",
+		"gleam",
+		"glium",
+		"idna",
+		"libc",
+		"openssl",
+		"rustc_serialize",
+		"serde",
+		"serde_json",
+		"typenum",
+		"unicode_normalization",
+		"unicode_segmentation",
+		"winapi",
+		"derive_more",
+		"rayon"
+	],
+	"rust.clippy_preference": "on"
+}

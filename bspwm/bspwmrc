@@ -1,0 +1,49 @@
+#! /bin/sh
+
+sxhkd &
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+
+rm ~/.bspc_rule.log
+
+bspc config external_rules_command "rules_command.sh"
+
+bspc config border_width        0
+bspc config border_radius       0
+bspc config border_antialias    true
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      false
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Alacritty:Scratchy sticky=on state=floating rectangle=1600x900+0+0 center=on
+bspc rule -a Thunderbird sticky=on state=floating center=on rectangle=2536x1500+0+0
+bspc rule -a TelegramDesktop sticky=on state=floating center=on
+bspc rule -a Zathura state=tiled
+bspc rule -a Surf state=tiled
+
+~/.config/picom/launch.sh &
+~/.config/polybar/launch.sh &
+fcitx &
+~/.config/feh/launch.sh &
+kdeconnect-indicator &
+# The network-dependent app
+notify-send "Network" "Waiting for network"
+while ! ping -c 1 -w 1 8.8.8.8 >/dev/null; do
+	sleep 1
+done
+notify-send "Network" "Network connected, waiting for proxy"
+fuser -k 1080/tcp
+electron-ssr &
+while ! proxychains -q curl --connect-timeout 1 www.google.com >/dev/null; do
+	sleep 1
+done
+notify-send "Network" "Proxy done"
+telegram-desktop &
+proxychains -q mailnag &
