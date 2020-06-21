@@ -47,6 +47,8 @@ setup_folder("feh")
 setup_folder("dunst")
 setup_folder("gtk-3.0")
 setup_folder("qt5ct")
+setup_folder("mpd")
+
 setup_file(".xinitrc")
 setup_file(".profile")
 setup_file(".Xmodmap")

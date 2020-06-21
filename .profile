@@ -16,3 +16,4 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export GLFW_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
