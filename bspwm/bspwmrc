@@ -38,6 +38,10 @@ notify-send "Network" "Waiting for network"
 while ! ping -c 1 -w 1 8.8.8.8 >/dev/null; do
 	sleep 1
 done
+
+# Proxy independent
+aria2c -D true
+
 notify-send "Network" "Network connected, waiting for proxy"
 fuser -k 1080/tcp
 electron-ssr &
