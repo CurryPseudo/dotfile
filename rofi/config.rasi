@@ -9,7 +9,7 @@ configuration {
 	separator-style: "solid";
 	hide-scrollbar: true;
 	dpi: 144;
-	theme: "~/.config/rofi/slate.rasi";
+	theme: "~/.config/rofi/materia.rasi";
 	color-normal: "#272827, #657b83, #272827, #272827, #13bf9d";
 	color-urgent: "#272827, #657b83, #272827, #272827, #13bf9d";
 	color-active: "#272827, #657b83, #272827, #272827, #13bf9d";

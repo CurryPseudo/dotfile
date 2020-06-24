@@ -24,7 +24,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Alacritty:Scratchy sticky=on state=floating rectangle=1600x900+0+0 center=on
 bspc rule -a Thunderbird sticky=on state=floating center=on rectangle=2536x1500+0+0
-bspc rule -a TelegramDesktop sticky=on state=floating center=on
+bspc rule -a TelegramDesktop sticky=on state=floating center=on rectangle=800x600+0+0
 bspc rule -a Zathura state=tiled
 bspc rule -a Surf state=tiled
 

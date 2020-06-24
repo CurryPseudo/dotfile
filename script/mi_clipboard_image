@@ -1,0 +1,3 @@
+#! /bin/bash
+xclip -selection clipboard -t image/png -o > /tmp/to_share.png
+mifile /tmp/to_share.png
