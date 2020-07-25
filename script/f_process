@@ -1,0 +1,3 @@
+#! /bin/bash
+pid=$(ps -A | awk "NR!=1" | fzf | awk '{print $1}')
+test -n "$pid" && (kill -s 9 $pid; echo "kill -s 9 $pid")

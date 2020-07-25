@@ -16,6 +16,7 @@ Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'chriskempson/base16-vim'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'lervag/vimtex'
+Plug 'FredKSchott/CoVim'
 "Plug 'tpope/vim-fugitive'
 "Plug 'SirVer/ultisnips'
 call plug#end()
