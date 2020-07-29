@@ -44,7 +44,7 @@ aria2c -D true
 
 notify-send "Network" "Network connected, waiting for proxy"
 fuser -k 1080/tcp
-electron-ssr &
+clash &
 while ! proxychains -q curl --connect-timeout 1 www.google.com >/dev/null; do
 	sleep 1
 done

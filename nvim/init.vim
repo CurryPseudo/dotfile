@@ -16,7 +16,7 @@ Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'chriskempson/base16-vim'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'lervag/vimtex'
-Plug 'FredKSchott/CoVim'
+"Plug 'bentglasstube/vim-bspwm'
 "Plug 'tpope/vim-fugitive'
 "Plug 'SirVer/ultisnips'
 call plug#end()
@@ -90,8 +90,6 @@ nmap <silent> gf :Files<CR>
 nmap <silent> gc :Commands<CR>
 nmap <leader>a <Plug>(coc-codeaction)
 nmap <leader>c :CocCommand<CR>
-nmap <leader>q <Plug>(coc-fix-current)
-nmap <leader>s :w<CR>
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{get(b:,'coc_git_blame','')}
 
@@ -105,3 +103,12 @@ let g:lodaded_nvimgdb = 1
 
 noremap j gj
 noremap k gk
+
+noremap <leader>h <C-w>h
+noremap <leader>j <C-w>j
+noremap <leader>k <C-w>k
+noremap <leader>l <C-w>l
+noremap <leader><S-l> <C-w>v<C-w>l
+noremap <leader><S-j> <C-w>s<C-w>l
+noremap <leader>q :q<CR>
+noremap <leader>s :w<CR>
