@@ -10,7 +10,6 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-surround'
-Plug 'liuchengxu/vista.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'chriskempson/base16-vim'
@@ -22,7 +21,7 @@ Plug 'lervag/vimtex'
 call plug#end()
 let base16colorspace=256
 set termguicolors
-colorscheme base16-eighties
+colorscheme base16-google-light
 syntax on
 let mapleader="\<space>"
 set number

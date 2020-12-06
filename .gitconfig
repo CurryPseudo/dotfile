@@ -1,0 +1,9 @@
+[user]
+	email = currypseudo@gmail.com
+	name = CurryPseudo
+[core]
+	editor = nvim
+[diff]
+	tool = meld
+[merge]
+	tool = meld

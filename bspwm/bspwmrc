@@ -29,7 +29,7 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Surf state=tiled
 
 ~/.config/picom/launch.sh &
-~/.config/polybar/launch.sh &
+# ~/.config/polybar/launch.sh &
 fcitx &
 ~/.config/feh/launch.sh &
 kdeconnect-indicator &
@@ -49,5 +49,5 @@ while ! proxychains -q curl --connect-timeout 1 www.google.com >/dev/null; do
 	sleep 1
 done
 notify-send "Network" "Proxy done"
-telegram-desktop &
-proxychains -q mailnag &
+# telegram-desktop &
+# proxychains -q mailnag &
